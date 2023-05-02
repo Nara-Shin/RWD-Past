@@ -2,3 +2,76 @@
 @import url("./a11y.css");
 @import url("./theme.css");
 @import url("./base.css");
+
+
+/* Common Class */
+/* sass mixin 사용하면 mobile, desktop 나눌 수 있음 */
+.default-layout {
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: yellow;
+}
+
+.header{
+  background-color: orange;
+  height: 15vh;
+}
+
+.navigation{
+  background-color: silver;
+  height: 15vh;
+}
+
+.main{
+  background-color: purple;
+  height: 60vh;
+}
+
+.footer{
+  background-color: salmon;
+  height: 10vh;
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+  body{
+    background-color: pink;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: skyblue;
+  }
+
+  .buttonWrapper{
+    display: none;
+  }
+
+  .header, .main{
+    max-width: var(--container-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* .header{
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  /* flexbox 사용 */
+  /* .header{
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__inner{
+    background-color: red;
+    width: var(--container-width);
+    height: 100%;
+  } */
+}
