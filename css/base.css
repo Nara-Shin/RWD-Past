@@ -1,0 +1,42 @@
+/* Base Style */
+body,
+body::before,
+body::after,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+  /* 고정형 - content-box */
+  /* 반응형 - border-box */
+}
+
+[class] {
+  /* 클래스 속성 줬을 때만 여백 0 설정 */
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  /* size, weight 등 6가지 한 번에 상속 */
+  font: inherit;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  background-color: #fff;
+}
+
+/* 유연한 미디어 */
+/* img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+} */
